@@ -1,37 +1,62 @@
-# ExoCortex — Personal Operating System (public demo)
+# ExoCortex — Personal AI Operating System
 
-Персональная система анализа дневниковых отчётов через AI-агента. Дневник → транскрибация → AI-анализ по шаблону → гипотезы → задачи на завтра.
+> 🇷🇺 [Русская версия](README.ru.md)
 
-## Что внутри
+A personal AI journal pipeline: dictate → transcribe → AI analysis → behavioral hypotheses → tomorrow's tasks.
 
-| Файл | Назначение |
-|------|-----------|
-| `AGENTS.md` | Системный промпт для AI — философия, протоколы, анти-лесть |
-| `PIPELINE.md` | Контуры обработки (C1-C4) и правила взаимодействия AI с дневником |
-| `DailyLogTemplate.md` | Шаблон ежедневного отчёта v8.4 |
-| `examples/daily_report.md` | Демо-отчёт (вымышленный) |
-| `examples/metrics.jsonl` | Формат хранения метрик |
-| `core/` | Скелет системы: цели, паттерны, гипотезы, калибровка |
-| `attractors/` | Концепция поведенческих аттракторов |
+500+ hypotheses in 3.5 months. 30 turned out to be true. Most of them I didn't want to know.
 
-## Быстрый старт
+## What's inside
 
-1. Скопируй `DailyLogTemplate.md` — это твой шаблон
-2. Скопируй `AGENTS.md` — это инструкция для AI
-3. Вечером диктуй отчёт голосом
-4. Скармливай AI (через DeepSeek, Claude, локально — любой)
-5. AI заполняет шаблон, пишет гипотезы, ставит задачи
+| File | Purpose |
+|------|---------|
+| `AGENTS.md` | System prompt for AI — philosophy, cognitive protocols, anti-sycophancy |
+| `PIPELINE.md` | Processing contours (C1-C4) and AI-to-journal interaction rules |
+| `DailyLogTemplate.md` | Daily report template v8.4 |
+| `examples/daily_report.md` | Demo report (fictional) |
+| `examples/metrics.jsonl` | Metrics storage format |
+| `core/` | System skeleton: goals, patterns, hypotheses, calibration |
+| `attractors/` | Behavioral attractors concept |
 
-## Что нужно
+## Quick start
 
-- Python 3.10+ (для транскрибации)
-- GigaAM или Whisper (транскрибация голоса)
-- DeepSeek API / Claude API / локальная LLM (анализ)
+1. Copy `DailyLogTemplate.md` — your template
+2. Copy `AGENTS.md` — your AI instructions
+3. Dictate your day in the evening (15-20 min)
+4. Feed to AI (DeepSeek, Claude, local LLM — any)
+5. AI fills the template, writes hypotheses, sets tasks
 
-## Статья
+## Requirements
 
-Подробный разбор системы: «Как я создал никому не нужную систему, а теперь написал про неё статью» (Хабр)
+- Python 3.10+ (for transcription)
+- GigaAM or Whisper (voice transcription)
+- DeepSeek API / Claude API / local LLM (analysis)
 
-## Лицензия
+## How it works
 
-MIT — делай что хочешь. Если соберёшь данные от многих людей — будет круто.
+```
+Voice (m4a) → GigaAM/Whisper (local STT) → raw .md
+→ AI reads AGENTS.md + template
+→ fills metrics, finds patterns, writes hypotheses
+→ sets tomorrow's tasks
+→ commits to git
+```
+
+**Daily:** signal detection, metric tracking, directive feedback loop  
+**Weekly:** hypothesis distillation, blind spot audit, goal velocity  
+**Monthly:** cross-domain correlation, trajectory deviation check  
+**Quarterly:** strategic deep dive, development vectors
+
+## Why
+
+Most AI note-taking apps store your thoughts. ExoCortex **analyzes** them. It finds patterns you can't see because you're inside them. It's not a second brain — it's an external neocortex.
+
+No flattery. The system prompt explicitly forbids praise and demands brutal honesty. It's configured to disagree with you by default.
+
+## Article
+
+Full breakdown (Russian): Habr article — «How I built a system that knows me better than I do»
+
+## License
+
+MIT — do whatever. If you collect data from multiple people, that would be awesome.
