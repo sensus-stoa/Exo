@@ -6,6 +6,28 @@ A personal AI journal pipeline: dictate → transcribe → AI analysis → behav
 
 500+ hypotheses in 3.5 months. 30 turned out to be true. Most of them I didn't want to know.
 
+## Quick start
+
+```bash
+# 1. Clone
+git clone https://github.com/sensus-stoa/Exo.git
+cd Exo
+
+# 2. Initial setup
+bash exo-init.sh
+# — tells which metrics you track
+# — whether you need goals system
+# — saves config.json
+
+# 3. Record your day (15-20 min)
+# Voice:     send to AI agent, it transcribes via GigaAM
+# Text:      just write raw notes
+
+# 4. Run C1 (Daily analysis)
+# Feed your raw text to any AI with AGENTS.md as system prompt.
+# AI fills DailyLogTemplate, writes hypotheses, sets tomorrow's tasks.
+```
+
 ## What's inside
 
 | File | Purpose |
