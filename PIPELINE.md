@@ -1,160 +1,160 @@
 # ExoCortex — Processing Pipeline
 
-> Это дополнение к `AGENTS.md`. Там — философия и протоколы. Здесь — механика обработки.
+> This supplements `AGENTS.md`. AGENTS.md has the philosophy and protocols. This file has the processing mechanics.
 
-## Контуры обработки
+## Processing Contours
 
-Система работает циклами разной глубины:
+The system runs in cycles of varying depth:
 
-| Контур | Период | Суть | Глубина |
-|--------|--------|------|---------|
-| **C1 — Daily** | Каждый день | AI читает сырой отчёт → метрики → гипотезы → директива на завтра | Операционная |
-| **C2 — Weekly** | Раз в неделю | Дистилляция недели: паттерны, execution rate, goal velocity, обновление гипотез | Тактическая |
-| **C3 — Monthly** | Раз в месяц | Глубокое бурение: структурные сдвиги, кросс-корреляции, 10 новых гипотез | Стратегическая |
-| **C4 — Quarterly** | Раз в квартал | Аудит системы: траектория метрик, кластеризация гипотез, системные паттерны | Архитектурная |
+| Contour | Period | Purpose | Depth |
+|---------|--------|---------|-------|
+| **C1 — Daily** | Every day | AI reads raw report → metrics → hypotheses → tomorrow's directive | Operational |
+| **C2 — Weekly** | Once a week | Weekly distillation: patterns, execution rate, goal velocity, hypothesis updates | Tactical |
+| **C3 — Monthly** | Once a month | Deep drilling: structural shifts, cross-correlations, 10 new hypotheses | Strategic |
+| **C4 — Quarterly** | Once a quarter | System audit: metric trajectory, hypothesis clustering, systemic patterns | Architectural |
 
 ## C1 — Daily Pipeline
 
-**Вход:** сырой отчёт (голос → транскрибация → текст).
+**Input:** raw report (voice → transcription → text).
 
-**AI читает:**
-- Сегодняшний сырой лог
-- Вчерашний отчёт (проверка директивы)
-- metrics.jsonl (7 последних строк — недельная динамика)
-- goals.md (текущие цели)
-- thought_patterns.md (реестр паттернов)
-- calibration_log.md (корректировка вероятностей)
+**AI reads:**
+- Today's raw log
+- Yesterday's report (directive check)
+- metrics.jsonl (last 7 lines — weekly dynamics)
+- goals.md (current goals)
+- thought_patterns.md (pattern registry)
+- calibration_log.md (probability correction)
 
-**AI генерирует:**
-1. ⚡ Сигналы — что неочевидного увидел AI
-2. Проверка вчерашней директивы (✅/❌ с категорией причины)
-3. Панель датчиков (Сон, Энергия, GI, DQ, ...)
-4. Сборка реальности (Internal / External — факты)
-5. Глубокий синтез (cross-domain, weekly dynamics)
-6. Гипотезы (макс 2, с novelty gate — AI не повторяет то что пользователь уже сказал)
-7. Директива на завтра (ONE ACTION + 3 outcomes)
-8. Ретроспектива (Agile Results формат)
+**AI generates:**
+1. ⚡ Signals — what non-obvious things AI noticed
+2. Yesterday's directive check (✅/❌ with cause category)
+3. Dashboard (Sleep, Energy, GI, DQ, ...)
+4. Reality assembly (Internal / External — facts)
+5. Deep synthesis (cross-domain, weekly dynamics)
+6. Hypotheses (max 2, with novelty gate — AI must not rephrase what the user already said)
+7. Tomorrow's directive (ONE ACTION + 3 outcomes)
+8. Retrospective (Agile Results format)
 
-**Ключевые правила C1:**
-- Гипотезы только НОВЫЕ — cross-domain связь или неочевидное следствие. Не перефразировать слова пользователя.
-- Execution gate: если 2 дня подряд Exec Rate < 1/3 → гипотезы НЕ пишутся. Фокус на ONE ACTION.
-- GI < порога → превентивный режим (восстановление).
-- System-sticking countermeasure: если «улучшал систему» вместо действий → сигнал + ONE ACTION = физическое действие.
+**Key C1 rules:**
+- Hypotheses must be NEW — cross-domain connection or non-obvious implication. Do not paraphrase the user's words.
+- Execution gate: if Exec Rate < 1/3 for 2 consecutive days → skip HYPOTHESES section entirely. Focus on ONE ACTION.
+- GI < threshold → preventive mode (recovery).
+- System-sticking countermeasure: if «improving the system» replaces actions → signal + ONE ACTION = physical action.
 
 ## C2 — Weekly Distillation
 
-**Вход:** все 7 daily reports + metrics.jsonl.
+**Input:** all 7 daily reports + metrics.jsonl.
 
-**Что делает:**
-- Агрегирует Execution Rate за неделю, Goal Velocity
-- Обновляет статусы паттернов (active / fading / mastered)
-- Обновляет architect_profile.md и clan_registry.md
-- Сравнивает фактические подтверждения гипотез с predicted вероятностями → calibration_log
-- Генерирует weekly_summary.md
+**What it does:**
+- Aggregates weekly Execution Rate, Goal Velocity
+- Updates pattern statuses (active / fading / mastered)
+- Updates architect_profile.md and clan_registry.md
+- Compares actual hypothesis confirmations with predicted probabilities → calibration_log
+- Generates weekly_summary.md
 
-**Порог:** если 3+ дня подряд Exec Rate = 0/3 → системный сигнал, а не просто «плохая неделя».
+**Threshold:** if Exec Rate = 0/3 for 3+ consecutive days → systemic signal, not just a «bad week».
 
 ## C3 — Monthly Deep Dive
 
-**Вход:** все weekly_summary.md за месяц + metrics.jsonl за всё время.
+**Input:** all weekly_summary.md files for the month + full metrics.jsonl.
 
-**Что делает:**
-- Trajectory deviation check: фактические средние vs долгосрочный тренд (±1σ)
-- Генерирует 10 абсолютно новых гипотез (вероятность >70%)
-- Кросс-корреляции: как бытовые детали влияют на макро-решения
-- Ищет структурные сдвиги: что изменилось не в цифрах, а в моделях поведения
-- Обновляет strategic_hypotheses.md, blind_spots.md, meta_hypotheses.md
+**What it does:**
+- Trajectory deviation check: actual averages vs long-term trend (±1σ)
+- Generates 10 entirely new hypotheses (probability >70%)
+- Cross-correlations: how everyday details affect macro decisions
+- Searches for structural shifts: what changed not in numbers but in behavioral models
+- Updates strategic_hypotheses.md, blind_spots.md, meta_hypotheses.md
 
 ## C4 — Quarterly Deep Dive
 
-**Вход:** все monthly reports за квартал + полный metrics.jsonl.
+**Input:** all monthly reports for the quarter + full metrics.jsonl.
 
-**Что делает:**
-- Полный аудит матрицы: bottlenecks × классы решений × статус
-- 10 новых гипотез + кросс-корреляции
-- Карьерная стратегия пересобирается
-- Векторы развития на следующий квартал
-- Системные выводы (meta_hypotheses)
+**What it does:**
+- Full matrix audit: bottlenecks × decision classes × status
+- 10 new hypotheses + cross-correlations
+- Career strategy reassembly
+- Development vectors for the next quarter
+- Systemic conclusions (meta_hypotheses)
 
-## Файлы системы
+## System Files
 
-В реальной системе файлов больше (architect_profile, clan_registry, personality_signature). Здесь — только те, что в публичном репозитории:
+In a real system there are more files (architect_profile, clan_registry, personality_signature). Here — only those in the public repository:
 
-| Файл | Суть |
-|------|------|
-| `AGENTS.md` | Идеологическое ядро: философия, протоколы мышления, анти-лесть |
-| `PIPELINE.md` | Контуры обработки C1-C4 + правила взаимодействия AI с дневником |
-| `DailyLogTemplate.md` | Шаблон ежедневного отчёта v8.4 |
-| `examples/metrics.jsonl` | Формат хранения структурированных метрик |
-| `core/goals.md` | Система целеполагания 3/3/3 (Agile Results) |
-| `core/thought_patterns.md` | Реестр поведенческих паттернов |
-| `core/all_hypotheses.md` | Классификация гипотез + шаблон |
-| `core/calibration_log.md` | Трек точности вероятностей AI |
-| `core/blind_spots.md` | Критические слепые пятна |
-| `attractors/README.md` | Концепция аттракторов + примеры |
+| File | Purpose |
+|------|---------|
+| `AGENTS.md` | Ideological core: philosophy, thinking protocols, anti-sycophancy |
+| `PIPELINE.md` | Processing contours C1-C4 + AI-journal interaction rules |
+| `DailyLogTemplate.md` | Daily report template v8.4 |
+| `examples/metrics.jsonl` | Structured metrics storage format |
+| `core/goals.md` | 3/3/3 goal-setting system (Agile Results) |
+| `core/thought_patterns.md` | Behavioral pattern registry |
+| `core/all_hypotheses.md` | Hypothesis classification + template |
+| `core/calibration_log.md` | AI probability accuracy tracking |
+| `core/blind_spots.md` | Critical blind spots |
+| `attractors/README.md` | Attractor concept + examples |
 
-## Технический стек
+## Tech Stack
 
-- **Транскрибация:** GigaAM (локально, CPU) — ffmpeg-чункование по 20с
-- **AI-обработка:** DeepSeek V4 (API) — контекст 1M токенов, thinking mode
-- **Хранение:** Markdown-файлы + JSONL-метрики + MemPalace KG
-- **Оркестрация:** shell-скрипт + cron
-
----
-
-## Правила обработки (Processing Rules)
-
-Эти правила — часть `AGENTS.md` в реальной системе. Они задают поведение AI при обработке дневника.
-
-### Гипотезы
-
-**Novelty Gate (обязательный перед записью каждой гипотезы):**
-1. Процитировать конкретную фразу пользователя из сырого лога по теме гипотезы
-2. Явно сформулировать: «Что нового добавляет AI?» — cross-domain связь, скрытый паттерн, неочевидное следствие из метрик, или противоречие нарративу
-3. Если ответ на п.2 пуст или сводится к переформулировке слов пользователя → гипотеза ОТКЛОНЯЕТСЯ
-
-AI не должен перефразировать наблюдения пользователя как «свои» гипотезы. Если пользователь уже сформулировал мысль — AI идёт дальше: находит то, что он НЕ заметил, НЕ связал, или где его вывод ошибочен.
-
-**Факточекер:** Перед генерацией гипотезы — проверить доступные источники фактов. Гипотеза строится на фактах, а не на отсутствии фактов.
-
-**Подтверждение → действие:** Если гипотеза подтверждается — AI ОБЯЗАН создать конкретное действие с дедлайном. Без действия подтверждение не засчитывается.
-
-### Директива
-
-**ONE ACTION:** Конкретное стартовое действие с самым низким порогом входа. Формат: глагол + объект + критерий + время. Запрещены абстракции: «сделать шаг», «заняться», «проверить всё». Пример: «Отправить 5 откликов (30 мин)».
-
-**3 Daily Outcomes:** Три результата к концу дня. Не действия («начать»), а результаты («отправить», «завершить», «купить»). Связаны с недельными целями.
-
-### Исполнение
-
-**Execution Rate:** Сколько из 3 outcomes выполнено. Если 3 дня подряд 0/3 → СИГНАЛ: «Execution gap». Система не работает на анализ — работает на действие.
-
-**Exec Gate:** Если 2 дня подряд Exec Rate < 1/3 → секция ГИПОТЕЗЫ пропускается полностью. Фокус на ONE ACTION.
-
-**Goal Velocity:** Для каждой недельной цели — сколько дней прошло, сколько осталось, прогресс. Если к середине недели < 50% → СИГНАЛ.
-
-### Защита системы
-
-**System-Sticking:** Если в логе «улучшал систему», «занимался ExoCortex» вместо действий → СИГНАЛ. ONE ACTION = физическое действие, не анализ.
-
-**System Improvement Freeze:** Если Exec Rate < 2/3 → запрет на улучшение системы. Никаких новых скриптов, правок AGENTS.md, рефакторинга. Исключение: баг-фиксы.
-
-**Moves Count:** Внешние ходы (действия с видимым результатом: публикация, письмо, отклик) vs внутренние (анализ, рефакторинг, чтение). Если внутренних > внешних 3 дня подряд → СИГНАЛ: «Система замыкается».
-
-### Паттерны
-
-**Pattern Detector:** 2+ дня подряд ❌ с одной категорией причины → запись в thought_patterns.md. При «Порог» → MVM (одноминутные блоки). При «Трение» → убрать конкретный барьер.
-
-**Procrastination Detector:** Если в логе «посидел в интернете», «немножко полежал», «а потом посмотрел» при невыполненных outcomes → AI фиксирует паттерн замещающей деятельности. Не осуждать — констатировать.
-
-### Режимы
-
-**GI < порога → восстановительный режим.** Директива: восстановление, не новые задачи. Кардио. Ранний сон.
-
-**MODE today:** Recovery / Standard / Push. Определяется по динамике метрик за последние 3-7 дней. Влияет на директиву.
-
-**Recovery-Push ритм:** 1 день recovery → 1-2 дня push → результат. Система сама размечает ритм на основе метрик.
+- **Transcription:** GigaAM (local, CPU) — ffmpeg chunking by 20s
+- **AI processing:** DeepSeek V4 (API) — 1M token context, thinking mode
+- **Storage:** Markdown files + JSONL metrics + MemPalace KG
+- **Orchestration:** shell script + cron
 
 ---
 
-> Это описание архитектуры. Реальная имплементация зависит от ваших инструментов. DeepSeek можно заменить на Claude, GigaAM — на Whisper, cron — на systemd timers. Главное — контуры обработки и правила взаимодействия AI с дневником.
+## Processing Rules
+
+These rules are part of `AGENTS.md` in a real system. They define AI behavior when processing the journal.
+
+### Hypotheses
+
+**Novelty Gate (mandatory before writing each hypothesis):**
+1. Quote the user's specific phrase from the raw log on the hypothesis topic
+2. Explicitly state: «What new thing does AI add?» — cross-domain connection, hidden pattern, non-obvious metric implication, or contradiction with the narrative
+3. If the answer to point 2 is empty or reduces to rephrasing the user's words → hypothesis REJECTED
+
+AI must not rephrase the user's observations as «its own» hypotheses. If the user has already formulated a thought — AI goes further: finds what they did NOT notice, did NOT connect, or where their conclusion is wrong.
+
+**Fact-checker:** Before generating a hypothesis — verify against available fact sources. A hypothesis is built on facts, not on the absence of facts.
+
+**Confirmation → action:** If a hypothesis is confirmed — AI MUST create a concrete action with a deadline. Without action, confirmation doesn't count.
+
+### Directive
+
+**ONE ACTION:** A concrete starting action with the lowest entry threshold. Format: verb + object + criterion + time. Abstractions forbidden: «take a step», «work on», «check everything». Example: «Send 5 job applications (30 min)».
+
+**3 Daily Outcomes:** Three results by end of day. Not actions («start»), but results («send», «complete», «buy»). Linked to weekly goals.
+
+### Execution
+
+**Execution Rate:** How many of the 3 outcomes were completed. If 0/3 for 3 consecutive days → SIGNAL: «Execution gap». The system doesn't work for analysis — it works for action.
+
+**Exec Gate:** If Exec Rate < 1/3 for 2 consecutive days → HYPOTHESES section is skipped entirely. Focus on ONE ACTION.
+
+**Goal Velocity:** For each weekly goal — days elapsed, days remaining, progress. If < 50% by midweek → SIGNAL.
+
+### System Protection
+
+**System-Sticking:** If the log contains «improved the system», «worked on ExoCortex» instead of actions → SIGNAL. ONE ACTION = physical action, not analysis.
+
+**System Improvement Freeze:** If Exec Rate < 2/3 → ban on system improvements. No new scripts, AGENTS.md edits, refactoring. Exception: bug fixes.
+
+**Moves Count:** External moves (actions with visible results: publication, email, application) vs internal (analysis, refactoring, reading). If internal > external for 3 consecutive days → SIGNAL: «System is closing in on itself».
+
+### Patterns
+
+**Pattern Detector:** 2+ consecutive days ❌ with the same cause category → entry in thought_patterns.md. «Threshold» → MVM (one-minute blocks). «Friction» → remove the specific barrier.
+
+**Procrastination Detector:** If the log contains «browsed the internet», «laid down a bit», «and then watched» with uncompleted outcomes → AI records a substitution activity pattern. Don't judge — state the fact.
+
+### Modes
+
+**GI < threshold → recovery mode.** Directive: recovery, not new tasks. Cardio. Early sleep.
+
+**MODE today:** Recovery / Standard / Push. Determined by metric dynamics over the last 3-7 days. Affects the directive.
+
+**Recovery-Push rhythm:** 1 day recovery → 1-2 days push → result. The system marks the rhythm based on metrics.
+
+---
+
+> This is an architecture description. Real implementation depends on your tools. DeepSeek can be replaced with Claude, GigaAM with Whisper, cron with systemd timers. What matters are the processing contours and the rules for AI-journal interaction.

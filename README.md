@@ -32,27 +32,15 @@ bash exo-init.sh
 
 | File | Purpose |
 |------|---------|
-| `AGENTS.md` | System prompt for AI — philosophy, cognitive protocols, anti-sycophancy |
-| `PIPELINE.md` | Processing contours (C1-C4) and AI-to-journal interaction rules |
-| `DailyLogTemplate.md` | Daily report template v8.4 |
+| `AGENTS.md` ([RU](AGENTS.ru.md)) | System prompt for AI — philosophy, cognitive protocols, anti-sycophancy |
+| `PIPELINE.md` ([RU](PIPELINE.ru.md)) | Processing contours (C1-C4) and AI-to-journal interaction rules |
+| `DailyLogTemplate.md` ([RU](DailyLogTemplate.ru.md)) | Daily report template v8.4 |
 | `examples/daily_report.md` | Demo report (fictional) |
 | `examples/metrics.jsonl` | Metrics storage format |
 | `core/` | System skeleton: goals, patterns, hypotheses, calibration |
 | `attractors/` | Behavioral attractors concept |
 
-## Quick start
-
-1. Copy `DailyLogTemplate.md` — your template
-2. Copy `AGENTS.md` — your AI instructions
-3. Dictate your day in the evening (15-20 min)
-4. Feed to AI (DeepSeek, Claude, local LLM — any)
-5. AI fills the template, writes hypotheses, sets tasks
-
-## Requirements
-
-- Python 3.10+ (for transcription)
-- GigaAM or Whisper (voice transcription)
-- DeepSeek API / Claude API / local LLM (analysis)
+Each `.md` file has a `.ru.md` counterpart with the Russian version. Default is English.
 
 ## How it works
 

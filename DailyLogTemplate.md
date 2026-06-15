@@ -1,79 +1,79 @@
 # Daily Log Template v8.4
 
 ```
-📅 [Дата] | v.8.4 | Режим: [Standard / Battle / Recovery]
+📅 [Date] | v.8.4 | Mode: [Standard / Battle / Recovery]
 
-> Импульс дня: [Синтез дня одной фразой]
+> Day's impulse: [One-sentence synthesis of the day]
 
---- ⚡ СИГНАЛЫ ---
-[Сигнал 1: что AI увидел неочевидного]
-[Сигнал 2: аномалия или паттерн]
-[Сигнал 3: если есть]
+--- ⚡ SIGNALS ---
+[Signal 1: what non-obvious thing AI noticed]
+[Signal 2: anomaly or pattern]
+[Signal 3: if any]
 
---- 📋 Вчерашняя директива ---
-| Директива | Статус | Причина |
-| [Пункт 1] | ✅/❌ | [Выполнено / Не выполнено — причина] |
-| [Пункт 2] | ✅/❌ | ... |
-| [Пункт 3] | ✅/❌ | ... |
+--- 📋 Yesterday's Directive ---
+| Directive | Status | Cause |
+| [Item 1] | ✅/❌ | [Done / Not done — cause] |
+| [Item 2] | ✅/❌ | ... |
+| [Item 3] | ✅/❌ | ... |
 
---- 📟 Панель Датчиков (1-10) ---
-Сон | Энергия | Стресс | Тревога | Дисциплина | GI | DQ | Кардио | Exec Rate
-[X] | [X] | [X] | [X] | [X] | [X] | [X] | [мин] | [X/3]
-🟢/🟡/🔴 с Δ и комментарием
+--- 📟 Dashboard (1-10) ---
+Sleep | Energy | Stress | Anxiety | Discipline | GI | DQ | Cardio | Exec Rate
+[X] | [X] | [X] | [X] | [X] | [X] | [X] | [min] | [X/3]
+🟢/🟡/🔴 with Δ and comment
 
-Динамика недели: таблица средних vs прошлая неделя с Δ
-⚠️ REDLINE: [критический риск дня]
-✅ GREENLINE: [победа дня]
+Weekly dynamics: table of averages vs last week with Δ
+⚠️ REDLINE: [critical risk of the day]
+✅ GREENLINE: [win of the day]
 
 --- 🧭 Human-First Signals ---
-Таблица порогов: сон <7, энергия <6, стресс >6, тревога >5, GI <7, Exec Rate <1/3 → реакция
+Threshold table: sleep <7, energy <6, stress >6, anxiety >5, GI <7, Exec Rate <1/3 → reaction
 
---- 🧱 Сборка Реальности ---
-Сфера контроля: работа/финансы, биология/быт
-Сфера влияния: оппоненты, отношения/близкие люди
+--- 🧱 Reality Assembly ---
+Sphere of control: work/finances, biology/daily life
+Sphere of influence: opponents, relationships/close people
 
---- 🧠 Глубокий Архитектурный Синтез ---
-2-3 инсайта с привязкой к Core Memory и Аттракторам
+--- 🧠 Deep Architectural Synthesis ---
+2-3 insights tied to Core Memory and Attractors
 
---- 🧪 ГИПОТЕЗЫ (макс 2) ---
-Гипотеза №[X]: [Название] | Критичность: [A/B/C]
-Вероятность: [X]% | Суть: [...]
+--- 🧪 HYPOTHESES (max 2) ---
+Hypothesis #[X]: [Title] | Criticality: [A/B/C]
+Probability: [X]% | Essence: [...]
 
-A — Действие (меняет поведение завтра)
-B — Модель (обновляет ментальную модель)
-C — Наблюдение (фиксирует паттерн, действия нет)
+A — Action (changes behavior tomorrow)
+B — Model (updates mental model)
+C — Observation (records pattern, no action)
 
---- 📝 Заметки ---
-[Наблюдения для weekly audit]
+--- 📝 Notes ---
+[Observations for weekly audit]
 
---- 🎯 Задачи на завтра ---
-Вектор 1-3 + ONE ACTION
+--- 🎯 Tasks for Tomorrow ---
+Vector 1-3 + ONE ACTION
 
---- 🔄 Ретроспектива ---
-✅ Хорошо: [...]
-⚡ Улучшить: [...]
+--- 🔄 Retrospective ---
+✅ Good: [...]
+⚡ Improve: [...]
 
---- 🪞 Рефлексия ---
-[Личная рефлексия — заполняется человеком]
+--- 🪞 Reflection ---
+[Personal reflection — filled in by human]
 ```
 
-## Описание блоков
+## Block Descriptions
 
-| Блок | Суть |
-|------|------|
-| ⚡ Сигналы | Что важного AI увидел — неочевидное, аномалии |
-| 📋 Директивы | Выполнено/нет с категорией причины |
-| 📟 Датчики | Метрики 1-10: Сон, Энергия, Стресс, Тревога, Дисциплина, GI, DQ |
-| 🧱 Сборка | Факты: что в моей власти, что нет |
-| 🧠 Синтез | AI-анализ причин поведения, cross-domain связи |
-| 🧪 Гипотезы | Нетривиальные догадки с вероятностью и критичностью |
-| 🎯 Задачи | Что делать завтра. ONE ACTION = конкретное действие с таймером |
-| 🔄 Ретро | Что сделано хорошо / что улучшить (формат Agile Results) |
-| 🪞 Рефлексия | Личное — заполняется человеком |
+| Block | Purpose |
+|-------|---------|
+| ⚡ Signals | What important things AI noticed — non-obvious, anomalies |
+| 📋 Directives | Done/not done with cause category |
+| 📟 Dashboard | Metrics 1-10: Sleep, Energy, Stress, Anxiety, Discipline, GI, DQ |
+| 🧱 Assembly | Facts: what is in my power, what is not |
+| 🧠 Synthesis | AI analysis of behavior causes, cross-domain connections |
+| 🧪 Hypotheses | Non-trivial guesses with probability and criticality |
+| 🎯 Tasks | What to do tomorrow. ONE ACTION = concrete action with timer |
+| 🔄 Retro | What was done well / what to improve (Agile Results format) |
+| 🪞 Reflection | Personal — filled in by human |
 
-## Метрики
+## Metrics
 
-- **GI** — состояние ЖКТ, субъективная оценка 1-10
-- **DQ (Decision Quality)** — качество решений, оценивается AI
-- **Сон** — субъективная оценка, не в часах (хотя близко)
-- **Exec Rate** — сколько из 3 daily outcomes выполнено
+- **GI** — GI tract state, subjective rating 1-10
+- **DQ (Decision Quality)** — quality of decisions, evaluated by AI
+- **Sleep** — subjective rating, not in hours (though close)
+- **Exec Rate** — how many of 3 daily outcomes completed

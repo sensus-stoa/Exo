@@ -1,42 +1,42 @@
 # 🕳 Blind Spots
 
-> Критические слепые пятна — то, что система (и человек) систематически не замечает.
-> Обновляется: ежемесячно. Максимум 11 активных.
+> Critical blind spots — what the system (and person) systematically fails to notice.
+> Updated: monthly. Maximum 11 active.
 
-## Формат
+## Format
 
 ```
-### BS-N: Название
-- **Суть:** [что именно не замечается]
-- **Почему это слепое пятно:** [почему система его пропускает]
-- **Последствия:** [к чему приводит]
-- **Индикатор:** [как заметить приближение]
-- **Контрмера:** [что делать когда индикатор сработал]
+### BS-N: Title
+- **Essence:** [what exactly is not noticed]
+- **Why it's a blind spot:** [why the system misses it]
+- **Consequences:** [what it leads to]
+- **Indicator:** [how to notice it approaching]
+- **Countermeasure:** [what to do when the indicator fires]
 ```
 
-## Примеры (абстрактные, не личные)
+## Examples (abstract, not personal)
 
-### BS-1: Переоценка скорости обучения
-- **Суть:** Ожидание что новый навык/технология освоится за дни, тогда как реальный срок — недели/месяцы.
-- **Почему это слепое пятно:** Первый успех создаёт иллюзию что остальное пойдёт так же быстро.
-- **Последствия:** Брошенные проекты на 30% готовности. Разочарование в себе.
-- **Индикатор:** Фраза «это просто, за выходные сделаю».
-- **Контрмера:** Первую оценку времени умножить на 5. Сравнить с фактическим через неделю.
+### BS-1: Overestimating Learning Speed
+- **Essence:** Expecting a new skill/technology to be mastered in days, when the real timeline is weeks/months.
+- **Why it's a blind spot:** Early success creates the illusion that the rest will go just as fast.
+- **Consequences:** Abandoned projects at 30% completion. Self-disappointment.
+- **Indicator:** The phrase «it's simple, I'll do it over the weekend».
+- **Countermeasure:** Multiply the initial time estimate by 5. Compare with actual after a week.
 
-### BS-2: Накопление мелких обязательств
-- **Суть:** «Да, посмотрю», «Ок, сделаю», «Завтра отвечу» — обещания по мелочи, незаметно съедающие ресурс.
-- **Почему это слепое пятно:** Каждое по отдельности — ноль. Сумма — часы в день.
-- **Последствия:** Вечером чувство «ничего не сделал» при реальной загрузке чужими задачами.
-- **Индикатор:** Больше 3 открытых «посмотрю» в переписке.
-- **Контрмера:** «Напиши мне в пятницу» вместо «я посмотрю».
+### BS-2: Accumulation of Small Commitments
+- **Essence:** «Yeah, I'll look», «Ok, I'll do it», «I'll reply tomorrow» — small promises that invisibly eat up resources.
+- **Why it's a blind spot:** Each individually is zero. The sum is hours per day.
+- **Consequences:** Evening feeling of «did nothing» while actually loaded with others' tasks.
+- **Indicator:** More than 3 open «I'll look into it» in messages.
+- **Countermeasure:** «Message me on Friday» instead of «I'll look».
 
-### BS-3: Слепота к восстановительному времени
-- **Суть:** Системная недооценка сколько времени нужно на восстановление после стресса/нагрузки.
-- **Почему это слепое пятно:** В момент подъёма кажется что ресурс бесконечен.
-- **Последствия:** Цикл: рывок → истощение → вынужденный простой → guilt → рывок.
-- **Индикатор:** 3+ дней с высокими метриками подряд — не победа, а предупреждение.
-- **Контрмера:** После каждых 2 дней push — 1 день recovery, независимо от самочувствия.
+### BS-3: Blindness to Recovery Time
+- **Essence:** Systematic underestimation of how much time is needed for recovery after stress/load.
+- **Why it's a blind spot:** During a high, resources feel infinite.
+- **Consequences:** Cycle: sprint → exhaustion → forced downtime → guilt → sprint.
+- **Indicator:** 3+ days of high metrics in a row — not a win, but a warning.
+- **Countermeasure:** After every 2 push days — 1 recovery day, regardless of how you feel.
 
 ---
 
-> Заполняйте своими слепыми пятнами по мере обнаружения. AI помогает находить через анализ повторяющихся ошибок.
+> Fill with your own blind spots as you discover them. AI helps find them by analyzing recurring errors.

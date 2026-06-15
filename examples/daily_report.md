@@ -1,50 +1,50 @@
 # Daily Report: 15.01.2026
 
-## ⚡ СИГНАЛЫ
+## ⚡ SIGNALS
 
-- **GI 6.8 — близко к порогу.** Завтрак пропущен, обед поздно. Паттерн: в дни без утреннего приёма пищи GI падает на 0.5-1 пункт.
-- **Exec Rate 2/3 второй день подряд.** Третья задача (звонок) стабильно откладывается — категория «Порог». Задача слишком крупная в текущей формулировке.
-- **Сон 6.5 — недосып накапливается.** Лёг в 00:30, вставал в 7:00. Вечернее залипание в интернет — триггер.
+- **GI 6.8 — near threshold.** Breakfast skipped, late lunch. Pattern: on days without morning food intake, GI drops by 0.5-1 point.
+- **Exec Rate 2/3 second day in a row.** Third task (phone call) steadily postponed — «Threshold» category. Task is too large in current formulation.
+- **Sleep 6.5 — sleep debt accumulating.** Went to bed at 00:30, woke at 7:00. Evening internet browsing — trigger.
 
-## 📋 Вчерашняя директива
+## 📋 Yesterday's Directive
 
-| Директива | Статус | Категория |
+| Directive | Status | Category |
 |-----------|--------|-----------|
-| **ONE ACTION:** Позвонить юристу (10 мин) | ❌ | (Порог) Задача воспринимается как крупная — avoidance |
-| **OUTCOME 1:** Закончить отчёт | ✅ | Сделано за 15 мин |
-| **OUTCOME 2:** Прогулка 30 мин | ✅ | Сделано вечером |
-| **Exec Rate:** 2/3 | 🟡 | Звонок отложен третий день |
+| **ONE ACTION:** Call the lawyer (10 min) | ❌ | (Threshold) Task perceived as large — avoidance |
+| **OUTCOME 1:** Finish report | ✅ | Done in 15 min |
+| **OUTCOME 2:** Walk 30 min | ✅ | Done in the evening |
+| **Exec Rate:** 2/3 | 🟡 | Call postponed for third day |
 
-## 📟 Панель Датчиков
+## 📟 Dashboard
 
-| Метрика | Значение | Δ | Состояние |
-|---------|----------|---|-----------|
-| Сон | 6.5 | -0.5 | 🟡 |
-| Энергия | 6.0 | -1.0 | 🟡 |
-| Стресс | 4.0 | +1.0 | 🟡 |
-| Тревога | 3.0 | +1.0 | 🟢 |
-| Дисциплина | 6.0 | -0.5 | 🟡 |
+| Metric | Value | Δ | State |
+|--------|-------|---|-------|
+| Sleep | 6.5 | -0.5 | 🟡 |
+| Energy | 6.0 | -1.0 | 🟡 |
+| Stress | 4.0 | +1.0 | 🟡 |
+| Anxiety | 3.0 | +1.0 | 🟢 |
+| Discipline | 6.0 | -0.5 | 🟡 |
 | GI | 6.8 | -0.4 | 🟡 |
 | DQ | 6.5 | -0.5 | 🟡 |
 
-⚠️ REDLINE: Звонок юристу — третий день откладывания. Завтра MVM: разбить на шаги по 2 минуты.
+⚠️ REDLINE: Lawyer call — third day of postponement. Tomorrow MVM: break into 2-minute steps.
 
-## 🧠 Глубокий Синтез
+## 🧠 Deep Synthesis
 
-**Откладывание звонка = не лень, а размер задачи.** Формулировка «позвонить юристу» слишком крупная. Мозг воспринимает как часовую операцию. Реальность: сам звонок — 5 минут. Решение: завтра формулировка «Набрать номер» (30 сек). Остальное — после соединения.
+**Phone call postponement = not laziness, but task size.** The formulation «call the lawyer» is too large. The brain perceives it as a one-hour operation. Reality: the call itself — 5 minutes. Solution: tomorrow formulation «Dial the number» (30 sec). The rest — after connection.
 
-## 🧪 ГИПОТЕЗЫ
+## 🧪 HYPOTHESES
 
-**Гипотеза №1: GI зависит от времени первого приёма пищи, а не от содержимого. 60%**
-Суть: В дни когда завтрак позже 10:00, GI падает на 0.5+ пунктов. Содержимое завтрака вторично. Тест: неделя с завтраком до 9:00 vs неделя с завтраком после 10:00.
+**Hypothesis #1: GI depends on first meal timing, not content. 60%**
+Essence: On days when breakfast is after 10:00, GI drops by 0.5+ points. Breakfast content is secondary. Test: one week with breakfast before 9:00 vs one week after 10:00.
 
-## 🎯 Директива на завтра
+## 🎯 Tomorrow's Directive
 
-- **ONE ACTION:** Открыть контакты, найти «Юрист», большой палец над кнопкой вызова (30 сек). Не звонить — только подготовить.
-- **OUTCOME 1:** Звонок юристу (после подготовки)
-- **OUTCOME 2:** Завтрак до 9:00, фиксация GI
-- **OUTCOME 3:** Прогулка 30 мин
+- **ONE ACTION:** Open contacts, find «Lawyer», thumb over the call button (30 sec). Don't call — just prepare.
+- **OUTCOME 1:** Call the lawyer (after preparation)
+- **OUTCOME 2:** Breakfast before 9:00, log GI
+- **OUTCOME 3:** Walk 30 min
 
 ---
 
-> Это демонстрационный отчёт. Все данные вымышленные.
+> This is a demonstration report. All data is fictional.

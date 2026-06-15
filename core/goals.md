@@ -1,39 +1,39 @@
 # 🎯 Goals (3/3/3)
 
-> Формат: 3 outcome (результат, не действие) на каждом уровне
-> Фильтр: metric + deadline + next action — цель не существует без этих трёх полей
+> Format: 3 outcomes (result, not action) at each level
+> Filter: metric + deadline + next action — a goal doesn't exist without these three fields
 
-## 🌍 Глобальные цели (North Stars)
+## 🌍 Global Goals (North Stars)
 
-| # | Цель | Суть |
-|---|------|------|
-| 1 | **[Ваша цель]** | [Почему это важно] |
-| 2 | **[Ваша цель]** | [...] |
-| 3 | **[Ваша цель]** | [...] |
+| # | Goal | Why It Matters |
+|---|------|----------------|
+| 1 | **[Your goal]** | [Why it matters] |
+| 2 | **[Your goal]** | [...] |
+| 3 | **[Your goal]** | [...] |
 
 ## 📅 Week Outcomes
 
 | # | Outcome | Metric | Deadline | Next Action | Status |
 |---|---------|--------|----------|-------------|--------|
-| 1 | **[Результат]** | [Измеримый критерий] | [Дата] | [След. действие] | ⚪ |
-| 2 | **[Результат]** | [...] | [...] | [...] | ⚪ |
-| 3 | **[Результат]** | [...] | [...] | [...] | ⚪ |
+| 1 | **[Result]** | [Measurable criterion] | [Date] | [Next action] | ⚪ |
+| 2 | **[Result]** | [...] | [...] | [...] | ⚪ |
+| 3 | **[Result]** | [...] | [...] | [...] | ⚪ |
 
 ## 📆 Month Outcomes
 
 | # | Outcome | Metric | Deadline | Next Action | Progress |
 |---|---------|--------|----------|-------------|----------|
-| 1 | **[Результат]** | [Критерий] | [Дата] | [Действие] | ⚪ |
-| 2 | **[Результат]** | [...] | [...] | [...] | ⚪ |
-| 3 | **[Результат]** | [...] | [...] | [...] | ⚪ |
+| 1 | **[Result]** | [Criterion] | [Date] | [Action] | ⚪ |
+| 2 | **[Result]** | [...] | [...] | [...] | ⚪ |
+| 3 | **[Result]** | [...] | [...] | [...] | ⚪ |
 
 ## 🟢 Year Outcomes
 
 | # | Outcome | Metric | Deadline | Next Action |
 |---|---------|--------|----------|-------------|
-| 1 | **[Результат]** | [Критерий] | [Дата] | [Действие] |
-| 2 | **[Результат]** | [...] | [...] | [...] |
+| 1 | **[Result]** | [Criterion] | [Date] | [Action] |
+| 2 | **[Result]** | [...] | [...] | [...] |
 
 ---
 
-> Система Agile Results (J.D. Meier): 3 исхода на день → 3 на неделю → 3 на месяц → 3 на год. Каждый уровень — декомпозиция верхнего. История недель сохраняется для ретроспективы.
+> Agile Results system (J.D. Meier): 3 outcomes per day → 3 per week → 3 per month → 3 per year. Each level is a decomposition of the level above. Week history is preserved for retrospective.

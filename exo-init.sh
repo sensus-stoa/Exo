@@ -1,35 +1,35 @@
 #!/bin/bash
-# exo init — первичная настройка ExoCortex
-# Запустить один раз после git clone
+# exo init — initial ExoCortex setup
+# Run once after git clone
 
 set -e
 
 EXO_HOME="$(cd "$(dirname "$0")" && pwd)"
 CONFIG_FILE="$EXO_HOME/config.json"
 
-echo "=== ExoCortex — первичная настройка ==="
+echo "=== ExoCortex — Initial Setup ==="
 echo ""
 
-# 1. Метрики
-echo "Какие метрики ты хочешь трекать?"
-echo "Через запятую. Пример: сон, энергия, стресс, деньги, спорт, настроение"
-echo "Enter — оставить по умолчанию (сон, энергия, GI, DQ)"
+# 1. Metrics
+echo "Which metrics do you want to track?"
+echo "Comma-separated. Example: sleep, energy, stress, money, sport, mood"
+echo "Enter — leave default (sleep, energy, GI, DQ)"
 read -r METRICS_INPUT
 if [ -z "$METRICS_INPUT" ]; then
-    METRICS='["сон","энергия","GI","DQ"]'
+    METRICS='["sleep","energy","GI","DQ"]'
 else
     METRICS=$(echo "$METRICS_INPUT" | tr ',' '\n' | sed 's/^ *//;s/ *$//' | awk '{print "\""$0"\""}' | paste -sd, | sed 's/^/[/;s/$/]/')
 fi
 
 echo ""
-echo "Метрики: $(echo "$METRICS" | tr -d '[]' | tr ',' ' ')"
+echo "Metrics: $(echo "$METRICS" | tr -d '[]' | tr ',' ' ')"
 
-# 2. Цели
+# 2. Goals
 echo ""
-echo "Нужна система целей 3/3/3?"
-echo "  1) Да (классическая — Agile Results)"
-echo "  2) Только недельные"
-echo "  3) Нет (только журнал + паттерны)"
+echo "Do you need the 3/3/3 goals system?"
+echo "  1) Yes (classic — Agile Results)"
+echo "  2) Weekly only"
+echo "  3) No (journal + patterns only)"
 read -r GOALS_CHOICE
 
 case "$GOALS_CHOICE" in
@@ -38,7 +38,7 @@ case "$GOALS_CHOICE" in
     *) GOALS_MODE="full" ;;
 esac
 
-# 3. Сохраняем конфиг
+# 3. Save config
 cat > "$CONFIG_FILE" << EOF
 {
   "version": 1,
@@ -49,13 +49,13 @@ cat > "$CONFIG_FILE" << EOF
 EOF
 
 echo ""
-echo "Конфиг сохранён: $CONFIG_FILE"
+echo "Config saved: $CONFIG_FILE"
 echo ""
 
-# Если целей нет — чистим goals.md
+# If no goals — clear goals.md
 if [ "$GOALS_MODE" = "none" ]; then
-    echo "# Цели отключены" > "$EXO_HOME/core/goals.md"
-    echo "Цели отключены. goals.md очищен."
+    echo "# Goals disabled" > "$EXO_HOME/core/goals.md"
+    echo "Goals disabled. goals.md cleared."
 fi
 
-echo "=== Готово. Запускай C1 ==="
+echo "=== Done. Run C1 ==="

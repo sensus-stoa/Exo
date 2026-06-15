@@ -1,47 +1,47 @@
 # 🧪 All Hypotheses
 
-> Максимум активных: 30 тактических + 20 стратегических
-> Правило: если горизонт > 1 месяц и не тестируется на этой неделе → стратегическая
+> Maximum active: 30 tactical + 20 strategic
+> Rule: if horizon > 1 month and not testable this week → strategic
 
-## Классификация
+## Classification
 
-| Тип | Файл | Макс | Горизонт | Обновление |
-|-----|------|------|----------|-----------|
-| Тактические | `all_hypotheses.md` | 30 | Дни-недели | Еженедельно |
-| Стратегические | `strategic_hypotheses.md` | 20 | Месяцы-годы | Ежемесячно |
-| Позитивные | `positive_scenarios.md` | 8-10 | Что может пойти ПРАВИЛЬНО | Еженедельно |
-| Мета | `meta_hypotheses.md` | 10 | Паттерны из паттернов | Ежемесячно |
-| Слепые пятна | `blind_spots.md` | 11 | Критические слепые пятна | Ежемесячно |
+| Type | File | Max | Horizon | Update |
+|------|------|-----|---------|--------|
+| Tactical | `all_hypotheses.md` | 30 | Days-weeks | Weekly |
+| Strategic | `strategic_hypotheses.md` | 20 | Months-years | Monthly |
+| Positive | `positive_scenarios.md` | 8-10 | What can go RIGHT | Weekly |
+| Meta | `meta_hypotheses.md` | 10 | Patterns from patterns | Monthly |
+| Blind Spots | `blind_spots.md` | 11 | Critical blind spots | Monthly |
 
-## Формат гипотезы
+## Hypothesis Format
 
 ```
-### H-N: Название | Критичность: A/B/C
+### H-N: Title | Criticality: A/B/C
 
-- **Вероятность:** X%
-- **Суть:** [одно предложение]
-- **Цитата:** [из дневника — что именно навело на мысль]
-- **Следствие:** [если верно — что меняется в поведении?]
-- **Статус:** active | confirmed | rejected
-- **Создана:** [дата]
+- **Probability:** X%
+- **Essence:** [one sentence]
+- **Quote:** [from journal — what led to this thought]
+- **Implication:** [if true — what changes in behavior?]
+- **Status:** active | confirmed | rejected
+- **Created:** [date]
 ```
 
-## Критичность
+## Criticality
 
-| Уровень | Значение |
-|---------|----------|
-| **A — Действие** | Меняет поведение завтра |
-| **B — Модель** | Обновляет ментальную модель |
-| **C — Наблюдение** | Фиксирует паттерн, действия нет |
+| Level | Meaning |
+|-------|---------|
+| **A — Action** | Changes behavior tomorrow |
+| **B — Model** | Updates mental model |
+| **C — Observation** | Records pattern, no action |
 
-## Тактические гипотезы (max 30)
+## Tactical Hypotheses (max 30)
 
-*Сюда AI записывает гипотезы, тестируемые на этой неделе.*
+*AI writes hypotheses testable this week here.*
 
-## Стратегические гипотезы (max 20)
+## Strategic Hypotheses (max 20)
 
-*Сюда AI записывает долгосрочные гипотезы при ежемесячном анализе.*
+*AI writes long-term hypotheses during monthly analysis here.*
 
 ---
 
-> AI не дублирует ваши собственные наблюдения. Если вы уже сформулировали мысль в дневнике — AI идёт дальше: ищет то, что вы НЕ заметили, НЕ связали, или где ваш вывод ошибочен.
+> AI does not duplicate your own observations. If you've already formulated a thought in your journal — AI goes further: finds what you did NOT notice, did NOT connect, or where your conclusion is wrong.

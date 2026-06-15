@@ -1,60 +1,60 @@
-# 🕳 Аттракторы (Attractors)
+# 🕳 Attractors
 
-> Аттрактор — устойчивый паттерн поведения, в который система (человек) скатывается снова и снова.
-> Не «вредная привычка», а гравитационное поле: чем ближе, тем сильнее затягивает.
+> An attractor is a stable behavioral pattern that the system (person) falls into again and again.
+> Not a «bad habit», but a gravitational field: the closer you are, the stronger it pulls.
 
-## Формат описания
+## Description Format
 
 ```
-### Аттрактор N: «Название»
-- **Сила:** X/10
-- **Гравитация:** [что именно затягивает — механика]
-- **Триггеры:** [что активирует]
-- **Протокол защиты:** [конкретное действие при обнаружении]
+### Attractor N: «Name»
+- **Strength:** X/10
+- **Gravity:** [what exactly pulls — mechanics]
+- **Triggers:** [what activates it]
+- **Protection Protocol:** [concrete action on detection]
 ```
 
-## Примеры (из реальной системы, обезличенные)
+## Examples (from real system, anonymized)
 
-### Аттрактор III: «Бегство в Интеллектуализацию»
-- **Сила:** 8/10
-- **Гравитация:** Мозг уходит в абстрактные модели и анализ вместо решения конкретных проблем. Комфортно, потому что анализ ощущается как работа.
-- **Триггеры:** Сложная задача с высокими ставками, неопределённость.
-- **Протокол защиты:** ONE ACTION — физическое действие до открытия инструментов анализа. Таймер.
+### Attractor III: «Escape into Intellectualization»
+- **Strength:** 8/10
+- **Gravity:** The brain retreats into abstract models and analysis instead of solving concrete problems. Comfortable because analysis feels like work.
+- **Triggers:** Complex task with high stakes, uncertainty.
+- **Protection Protocol:** ONE ACTION — physical action before opening analysis tools. Timer.
 
-### Аттрактор VII: «Теорема Одинокой Цитадели»
-- **Сила:** 9/10
-- **Гравитация:** Система анализа замыкается на себе — улучшение инструментов анализа заменяет внешние действия. ExoCortex пожирает время, которое должен был экономить.
-- **Триггеры:** Тревога, отсутствие внешней обратной связи.
-- **Протокол защиты:** Публичные действия наружу. Одна статья/комментарий/пост = мост из Цитадели.
+### Attractor VII: «The Lone Citadel Theorem»
+- **Strength:** 9/10
+- **Gravity:** The analysis system closes in on itself — improving analysis tools replaces external actions. ExoCortex consumes the time it was supposed to save.
+- **Triggers:** Anxiety, absence of external feedback.
+- **Protection Protocol:** Public actions outward. One article/comment/post = bridge out of the Citadel.
 
-### Аттрактор VIII: «Симбиоз с AI»
-- **Сила:** 8/10
-- **Гравитация:** AI-агент становится настолько полезным, что реальные действия заменяются диалогом с агентом о том, как их лучше сделать.
-- **Триггеры:** Наличие AI-агента под рукой.
-- **Протокол защиты:** Лимит времени на обслуживание системы. Один день в неделю без AI.
+### Attractor VIII: «Symbiosis with AI»
+- **Strength:** 8/10
+- **Gravity:** The AI agent becomes so useful that real actions are replaced by dialogue with the agent about how to do them better.
+- **Triggers:** AI agent available at hand.
+- **Protection Protocol:** Time limit on system maintenance. One day a week without AI.
 
-### Аттрактор V: «Качели Аскезы и Срыва»
-- **Сила:** 6/10
-- **Гравитация:** Задача не начата до 14:00 → попытка «догнать» вечером → поздно лечь → убитое утро → цикл повторяется.
-- **Триггеры:** Утро без плана, высокая тревожность.
-- **Протокол защиты:** Не начал до 14:00 — признать день recovery. Не догонять. Завтра новый цикл.
+### Attractor V: «Asceticism-Break Swing»
+- **Strength:** 6/10
+- **Gravity:** Task not started by 14:00 → attempt to «catch up» in the evening → late bedtime → ruined morning → cycle repeats.
+- **Triggers:** Morning without a plan, high anxiety.
+- **Protection Protocol:** Not started by 14:00 — declare the day recovery. Don't chase. Tomorrow is a new cycle.
 
-## Как AI находит аттракторы
+## How AI Finds Attractors
 
-Через ежемесячный мета-анализ. AI ищет паттерны, которые:
-1. Повторяются >3 раз за месяц
-2. Имеют один и тот же триггер
-3. Приводят к одному и тому же результату
+Through monthly meta-analysis. AI searches for patterns that:
+1. Repeat >3 times per month
+2. Share the same trigger
+3. Lead to the same result
 
-Первые 1-2 месяца — только накопление данных. Аттракторы начинают проявляться после 60+ дней наблюдений.
+First 1-2 months — data accumulation only. Attractors begin to emerge after 60+ days of observation.
 
-## Позитивные аттракторы
+## Positive Attractors
 
-Не все аттракторы вредны. Некоторые — конструктивные:
+Not all attractors are harmful. Some are constructive:
 
-- **Recovery-Push ритм:** 1 день recovery → 1-2 дня push → устойчивый результат. Сила: 7/10.
-- **Кардио через рутину:** Физическая активность встроена в быт (рюкзак в магазин, прогулка). Сила: 5/10, нуждается в усилении.
+- **Recovery-Push rhythm:** 1 day recovery → 1-2 days push → sustainable result. Strength: 7/10.
+- **Cardio through routine:** Physical activity embedded in daily life (backpack to store, walk). Strength: 5/10, needs reinforcement.
 
 ---
 
-> Количество аттракторов у каждого человека разное. Система со временем находит 5-15 штук. Часть из них — универсальные (есть почти у всех), часть — индивидуальные.
+> Everyone has a different number of attractors. The system finds 5-15 over time. Some are universal (present in almost everyone), some are individual.

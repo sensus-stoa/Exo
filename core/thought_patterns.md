@@ -1,48 +1,48 @@
-# 🧠 Реестр мыслительных паттернов (Thought Patterns)
+# 🧠 Thought Pattern Registry
 
-> Формат: реестр, не гипотезы. Фиксирует повторяющееся поведение.
-> Обновляется: ежедневно (добавление проявлений) + еженедельно (тримминг, частота, статус)
+> Format: registry, not hypotheses. Records recurring behavior.
+> Updated: daily (adding occurrences) + weekly (trimming, frequency, status)
 
-## Формат записи
+## Entry Format
 
 ```
-### П-N: Название паттерна
-- **Триггер:** [конкретное событие/контекст]
-- **Проявление:** [что делает, конкретно]
-- **Контрмера:** [действие, не размышление]
-- **Частота:** N раз за последние 4 недели
-- **Первое наблюдение:** [дата]
-- **Последнее проявление:** [дата]
-- **Статус:** active | fading | mastered
+### P-N: Pattern Name
+- **Trigger:** [specific event/context]
+- **Manifestation:** [what happens, concretely]
+- **Countermeasure:** [action, not reflection]
+- **Frequency:** N times in last 4 weeks
+- **First observed:** [date]
+- **Last occurrence:** [date]
+- **Status:** active | fading | mastered
 ```
 
-## Активные паттерны (примеры)
+## Active Patterns (examples)
 
-### П-1: Замещающая автоматизация
-- **Триггер:** Необходимость сделать рутинное действие
-- **Проявление:** Вместо действия — написание скрипта/парсера для этого действия
-- **Контрмера:** Закрыть IDE. Ручное действие (таймер 15 мин) ДО кода.
-- **Частота:** 3 раза за 4 недели
-- **Статус:** active
+### P-1: Substitution Automation
+- **Trigger:** Need to do a routine action
+- **Manifestation:** Instead of doing the action — writing a script/parser for it
+- **Countermeasure:** Close IDE. Manual action (timer 15 min) BEFORE code.
+- **Frequency:** 3 times in 4 weeks
+- **Status:** active
 
-### П-2: Системное залипание
-- **Триггер:** Тревога / неопределённость
-- **Проявление:** Уход в улучшение системы вместо действия вовне
-- **Контрмера:** ONE ACTION — физическое действие. Не анализ, не код.
-- **Частота:** 2-3 раза/неделя
-- **Статус:** active
+### P-2: System Sticking
+- **Trigger:** Anxiety / uncertainty
+- **Manifestation:** Retreating into system improvement instead of external action
+- **Countermeasure:** ONE ACTION — physical action. Not analysis, not code.
+- **Frequency:** 2-3 times/week
+- **Status:** active
 
-## Позитивные паттерны
+## Positive Patterns
 
-### ПП-1: Recovery-Push ритм
-- **Суть:** 1 день recovery → 1-2 дня push → результат
-- **Усиление:** Размечать неделю заранее. Не бороться с recovery-днями.
-- **Частота:** стабильно при соблюдении
+### PP-1: Recovery-Push Rhythm
+- **Essence:** 1 day recovery → 1-2 days push → result
+- **Reinforcement:** Pre-mark the week. Don't fight recovery days.
+- **Frequency:** stable when followed
 
-### ПП-2: Кардио через рутину
-- **Суть:** Кардио встроено в бытовые действия (магазин, прогулка)
-- **Усиление:** Цель 5/7 дней
+### PP-2: Cardio Through Routine
+- **Essence:** Cardio embedded in daily actions (store, walk)
+- **Reinforcement:** Goal 5/7 days
 
 ---
 
-> Заполняйте своими паттернами. AI сам найдёт повторяющееся поведение и предложит формулировку. Ваша задача — подтвердить или отвергнуть.
+> Fill with your own patterns. AI will find recurring behavior and suggest formulations. Your job — confirm or reject.
